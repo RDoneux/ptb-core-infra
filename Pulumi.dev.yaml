@@ -2,3 +2,7 @@ encryptionsalt: v1:yJwA8VkaL2g=:v1:84RFzPw7rnYDnzBX:I22+hLeeACVYRn1uktm2jhXDN+me
 config:
   azure:location: UKSouth
   azure:subscriptionId: 4acdbe90-96df-4eeb-b909-069454b47fd3
+  ptb-core-infra:prefix: ptb-core
+  ptb-core-infra:administratorPassword:
+    secure: v1:lSWIQ2czgPcauZZE:Lte6yJkW06tKHHSlEOZds7ifWZur3I+x9rNwcZAYB86QvG83XiL65yiT
+  ptb-core-infra:administratorLogin: ptbroot
