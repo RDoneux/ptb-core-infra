@@ -78,11 +78,15 @@ const mysqlServer = new FlexibleServer(`${prefix}-db`, {
   skuName: "B_Standard_B1ms",
   version: "8.0.21",
   delegatedSubnetId: dbSubnet.id,
-  privateDnsZoneId: dbZone.id
+  privateDnsZoneId: dbZone.id,
+  backupRetentionDays: 1,
+  zone: "1",
 }, {
   dependsOn: [zoneVirtualNetworkLink],
 });
 
 export const databaseServer = mysqlServer
+export const resourceGroupName = resourceGroup.name;
 export const virtualNetworkId = virtualNetwork.id;
 export const privateSubnetId = privateSubnet.id;
+export const privateSubnetCIDR = privateSubnet.addressPrefixes;
